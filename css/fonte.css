@@ -15,6 +15,19 @@ nav {
     align-items: center;
 }
 
+.section-anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    /* Esta margem negativa precisa ser ajustada com base na altura do seu menu */
+    top: -120px; /* Ajuste conforme a altura do seu menu (incluindo padding) */
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
 .esquerda {
     display: flex;
     align-items: center;
@@ -172,9 +185,8 @@ header {
 .sobremim {
     background-color: #D6D5D8;
     padding: 20px;
-    font-family: 'Arial', sans-serif;
     max-width: 100%;
-    overflow: hidden;
+    scroll-margin-top: 90px;
 }
 
 /* Estilo para o título principal */
