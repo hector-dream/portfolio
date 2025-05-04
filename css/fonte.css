@@ -4,7 +4,7 @@ html, body {
 }
 
 nav {
-    background-color: #e0b182;
+    background-color: #2E3B61;
     padding: 20px 60px;
     position: sticky;
     top: 0;
@@ -38,7 +38,7 @@ nav {
 }
 
 .menu a:hover {
-    color: #3c4142;
+    color: #83879C;
 }
 
 .casinha-wrapper {
@@ -59,12 +59,12 @@ nav {
 }
   
 .casinha-normal {
-    filter: brightness(0) saturate(100%) invert(34%) sepia(0%) hue-rotate(0deg) brightness(30%) contrast(89%);
+    filter: brightness(0) invert(1);
     opacity: 1;
 }
-  
+
 .casinha-hover {
-    filter: brightness(0) invert(1);
+    filter: brightness(0) saturate(100%) invert(34%) sepia(0%) hue-rotate(0deg) brightness(129%) contrast(89%);
     opacity: 0;
 }
   
@@ -80,14 +80,13 @@ nav {
     height: 50px;
     width: 50px;
     border-radius: 50%; 
-    border: 2px solid #3c4142;
+    border: 2px solid #14192A;
     object-fit: cover;
-
 }
 
 body {
-    color: #3c4142;
-    background-color: #9caf86;
+    color: #191308;
+    background-color: #EDEAE8;
 }
 
 header {
@@ -117,14 +116,14 @@ header {
 
 .foto-perfil {
     border-radius: 5%; 
-    border: 1px solid #3c4142;
+    border: 1px solid #14192A;
     transform: scale(2.5); 
     margin-right: 130px;
     margin-bottom: 80px;
     width: 100px;
     height: 100px;
     object-fit: cover;
-    box-shadow: 2px 2px 3px #3c4142;
+    box-shadow: 2px 2px 3px #14192A;
 }  
 
 .botoes-iniciais {
@@ -138,10 +137,10 @@ header {
 .card-botao {
   width: 140px;
   height: 140px;
-  background-color: #e0b182d4;
-  border: 2px solid #3c4142; 
+  background-color: #83879C;
+  border: 2px solid #14192A; 
   border-radius: 20px;
-  box-shadow: 4px 4px 6px #3c4142;
+  box-shadow: 4px 4px 6px #14192A;
   transition: transform 0.2s, background-color 0.3s;
   display: flex;
   align-items: center;
@@ -152,7 +151,7 @@ header {
 
 .card-botao:hover {
   transform: translateY(-3px);
-  background-color: #e6c9a8; 
+  background-color: #9EA4BD; 
 }
 
 .card-botao a {
@@ -162,7 +161,7 @@ header {
   width: 100%;     
   height: 100%;                  
   padding: 10px;
-  color: #3c4142;
+  color: #14192A;
   text-decoration: none;
   font-size: 20px;
   font-family: Georgia, serif;
