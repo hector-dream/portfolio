@@ -168,3 +168,141 @@ header {
   font-weight: bold;
   line-height: 1.2;
 }
+
+.sobremim {
+    background-color: #D6D5D8;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Estilo para o título principal */
+.cards-sobre h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+    position: relative;
+}
+
+/* Adiciona uma linha decorativa abaixo do título */
+.cards-sobre h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+/* Container para os cards com rolagem horizontal */
+.cards-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Container dos cards */
+.cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 15px; /* Espaço para a barra de rolagem */
+    -webkit-overflow-scrolling: touch; /* Rolagem suave em dispositivos iOS */
+}
+
+/* Estilo para cada card individual */
+.c1, .c2, .c3, .c4 {
+    min-width: 280px;
+    max-width: 320px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Efeito hover nos cards */
+.c1:hover, .c2:hover, .c3:hover, .c4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Cores diferentes para cada card */
+.c1 {
+    border-top: 4px solid #3498db; /* Azul */
+}
+
+.c2 {
+    border-top: 4px solid #2ecc71; /* Verde */
+}
+
+.c3 {
+    border-top: 4px solid #f1c40f; /* Amarelo */
+}
+
+.c4 {
+    border-top: 4px solid #e74c3c; /* Vermelho */
+}
+
+/* Estilos para os títulos dentro dos cards */
+.cards-sobre h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* Estilos para os parágrafos dentro dos cards */
+.cards-sobre p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Personalização da barra de rolagem */
+.cards-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+    .c1, .c2, .c3, .c4 {
+        min-width: 250px;
+    }
+    
+    .cards-sobre h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .c1, .c2, .c3, .c4 {
+        min-width: 220px;
+    }
+    
+    .cards-sobre h2 {
+        font-size: 22px;
+    }
+}
